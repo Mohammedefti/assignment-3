@@ -11,14 +11,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./tailwind.config.js">
     <!-- font - awsome -->
     <script src="https://kit.fontawesome.com/8a8aa84027.js" crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage:{
+              'custom-image': "url('./asstes/bg.png')",
+            },
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 
     <style>
         .font-manrope{
             font-family: "Manrope", sans-serif;
         }
+        
     </style>
 
 </head>
@@ -111,13 +126,15 @@
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content  flex-col-reverse lg:flex-row-reverse">
           <div class="">
-            <img
+            <img  
             src="./assets/Rectangle.png"
             class="max-w-sm rounded-lg shadow-2xl" />
           </div>
-          
-            <div class="hidden lg:block lg:absolute lg:mt-100 lg:ml-40" ><img src="./assets/Vector.png" alt=""></div>
+          <div class="relative">
 
+          
+            <div class="hidden lg:block lg:absolute  lg:left-50 lg:top-50" ><img src="./assets/Vector.png" alt=""></div>
+</div>
           <div class="lg:text-left lg:w-1/2 text-center">
             <button class="border p-2 mb-5 rounded-3xl text-sm bg-white ">
               <i class="
@@ -167,6 +184,88 @@ modern sophistication, featuring weathered wood, sleek metal accents.
           
         </div>
       </div> 
+
+      <!-- third section -->
+      <div class=" ">       
+        <!-- text container -->
+        <div class="m-10 text-center">       
+          <button class="border  p-2 mb-5 rounded-3xl text-sm bg-white ">
+           <i class="
+                      fa-solid fa-arrow-right "></i>
+                   </a> 
+           How we works
+          </button>
+          <h1 class="text-3xl font-bold mb-5">Our Works Process</h1>
+         <p class="text-sm"> The barn house captivates with its blend of rustic charm and  modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!-- card container -->
+        <div class="lg:w-11/12 lg:gap-x-10 lg:grid lg:grid-cols-4 ">
+         <!-- first card -->
+        <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(231,193,211)]">
+         <div class="flex justify-start pl-8">
+           <img class=" " src="./assets/concept.png" alt="">
+         </div>
+           
+         
+         <div class="card-body">
+           <h2 class="card-title">
+             Concept
+             
+           </h2>
+           <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
+          
+         </div>
+       </div>
+        <!-- second card -->
+        <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(239,218,110)]">
+         <div class="flex justify-start pl-8">
+           <img class="border " src="./assets/flow-chart.png" alt="">
+         </div>
+        
+         <div class="card-body">
+           <h2 class="card-title">
+             Design Process
+             
+           </h2>
+           <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
+          
+         </div>
+       </div>
+        <!-- Third card -->
+        <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(164,218,195)]">
+         <div class="flex justify-start pl-8">
+ 
+           <img class=" " src="./assets/vision.png" alt="">
+         
+         </div>
+         <div class="card-body">
+           <h2 class="card-title">
+             Supervision
+             
+           </h2>
+           <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
+          
+         </div>
+       </div>
+        <!-- fourth card -->
+        <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(119,170,234)]">
+        <div class="flex justify-start pl-8">
+          <img class=" " src="./assets/budget-planning.png" alt="">
+         </div>
+           
+         
+         <div class="card-body">
+           <h2 class="card-title">
+             Budget Planing
+             
+           </h2>
+           <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
+          
+         </div>
+       </div>
+        </div>
+ 
+       </div>
       
       <!-- creative section one -->
        <div class="mt-10 mb-10">
@@ -209,7 +308,7 @@ modern sophistication, featuring weathered wood, sleek metal accents.
                 <div class=" lg:col-span-3 border rounded-2xl  p-4  ">
             <img class="" src="./assets/img2.png" alt="">
           </div>
-            
+          </div>  
         
         </div>
           
@@ -246,90 +345,77 @@ modern sophistication, featuring weathered wood, sleek metal accents.
         </div>
 
        </div>
+
+       <!-- second last section -->
+      <div >
+        <!-- text container  -->
+         <div class="text-center my-10 ">
+          <button class="border  p-2 mb-3 rounded-3xl 
+          bg-[rgb(229,243,214)] text-sm bg-white ">
+            <i class="
+                       fa-solid fa-arrow-right "></i>
+                    </a> 
+          Let's Connect
+           </button>
+           <h1 class="text-4xl  font-bold">Let’s Discuss Next Project</h1>
+          <p class="px-5 py-3">
+            The barn house captivates with its blend of rustic charm and  modern sophistication,
+            <br> featuring weathered wood, sleek metal accents.
+          </p>
+          </div>
+          <div class="text-center my-5">
+            <div>
+              <input
+  type="text"
+  placeholder="First Name*"
+  class="input items-stretch mb-5 input-bordered rounded-3xl w-full max-w-xs" />
+            <input
+  type="text"
+  placeholder="Last Name*"
+  class="input items-stretch mb-5 input-bordered rounded-3xl w-full max-w-xs" />
+            </div>
+            <input
+  type="text"
+  placeholder="Phone Number*"
+  class="input items-stretch input-bordered rounded-3xl w-full mb-5 max-w-xs" />
+            <input
+  type="text"
+  placeholder="Email *"
+  class="input items-stretch mb-5 input-bordered rounded-3xl w-full max-w-xs" />
+  <div class="lg:flex  lg:justify-center  mb-5 lg:items-center">
+<div class=" bg-white rounded-lg p-4 lg:max-w-2xl max-w-md  lg:3/4 w-11/12 items-center  lg:w-full ml-5">
+      <textarea 
+        placeholder="Write your message here"
+        class="textarea textarea-bordered lg:items-center
+          lg:w-full w-11/12 h-40 rounded-2xl"
+      ></textarea>
+    </div>
+  </div>
+    
+    <div class="card-actions justify-center ">
+      <!-- <button class="btn lg:w-1/6 w-11/12 rounded-3xl bg-[rgb(212,246,174)]  text-[rgb(28,28,28)] font-bold texl-3xl">Send Mail
+        <i class="bg-[rgb(171,239,95)] text-blue-900  
+        -rotate-45 p-1 rounded-3xl fa-solid fa-arrow-right "></i>
+
+      </button> -->
+      <a class=" btn rounded-3xl  w-9/12 bg-[rgb(171,239,95)] text-[rgb(28,28,28)] font-bold">Send Mail
+        <i class="bg-[rgb(28,28,28)] text-white
+      -rotate-45 p-1 rounded-3xl  fa-solid fa-arrow-right "></i>
+      </a>
+    </div>
+  
+  </div>
+          </div>
+      </div>
       
-      <!-- third section -->
-       <div class=" ">       
-       <!-- text container -->
-       <div class="m-10 text-center">       
-         <button class="border  p-2 mb-5 rounded-3xl text-sm bg-white ">
-          <i class="
-                     fa-solid fa-arrow-right "></i>
-                  </a> 
-          How we works
-         </button>
-         <h1 class="text-3xl font-bold mb-5">Our Works Process</h1>
-        <p class="text-sm"> The barn house captivates with its blend of rustic charm and  modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
-       </div>
-       <!-- card container -->
-       <div class="lg:w-11/12 lg:gap-x-10 lg:grid lg:grid-cols-4 ">
-        <!-- first card -->
-       <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(231,193,211)]">
-        <div class="flex justify-start pl-8">
-          <img class=" " src="./assets/concept.png" alt="">
-        </div>
-          
-        
-        <div class="card-body">
-          <h2 class="card-title">
-            Concept
-            
-          </h2>
-          <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
-         
-        </div>
-      </div>
-       <!-- second card -->
-       <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(239,218,110)]">
-        <div class="flex justify-start pl-8">
-          <img class="border " src="./assets/flow-chart.png" alt="">
-        </div>
-       
-        <div class="card-body">
-          <h2 class="card-title">
-            Design Process
-            
-          </h2>
-          <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
-         
-        </div>
-      </div>
-       <!-- Third card -->
-       <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(164,218,195)]">
-        <div class="flex justify-start pl-8">
-
-          <img class=" " src="./assets/vision.png" alt="">
-        
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">
-            Supervision
-            
-          </h2>
-          <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
-         
-        </div>
-      </div>
-       <!-- fourth card -->
-       <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(119,170,234)]">
-       <div class="flex justify-start pl-8">
-         <img class=" " src="./assets/budget-planning.png" alt="">
-        </div>
-          
-        
-        <div class="card-body">
-          <h2 class="card-title">
-            Budget Planing
-            
-          </h2>
-          <p class="text-left">The bam house captivates with its blend of rustic charm and modem</p>
-         
-        </div>
-      </div>
-       </div>
-
-      </div>
+      
     </main>
     
+
+    <!-- second last section -->
+     <div class="">
+
+     </div>
     
       <!-- footer section -->
       <footer class="  footer footer-center bg-black text-primary-content p-10">
@@ -348,8 +434,8 @@ modern sophistication, featuring weathered wood, sleek metal accents.
           <a class="link link-hover">Blogs</a>
           <a class="link link-hover">Contact us</a>
         </nav>
-        <div class="card-actions justify-center w-[full]">
-          <button class="btn w-[] rounded-3xl bg-[rgb(212,246,174)]  text-[rgb(28,28,28)] font-bold texl-3xl">Book Consult
+        <div class="card-actions   justify-center w-full">
+          <button class="btn w-[300px] lg:w-[200px]  rounded-3xl bg-[rgb(212,246,174)]  text-[rgb(28,28,28)] font-bold texl-3xl">Book Consult
             <i class="bg-[rgb(28,28,28)] text-white
                   -rotate-45 p-1 rounded-3xl  fa-solid fa-arrow-right "></i>
 
