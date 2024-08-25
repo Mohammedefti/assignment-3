@@ -19,7 +19,7 @@
         theme: {
           extend: {
             backgroundImage:{
-              'custom-image': "url('./asstes/bg.png')",
+              'custom-image': "url('./assets/bg.png')",
             },
             colors: {
               clifford: '#da373d',
@@ -39,12 +39,13 @@
 </head>
 <body class="font-manrope">
     <!-- header section -->
-    <header class="bg-[rgb(251,251,251)]">
-        <nav class="lg:w-11/12  bg-[rgb(251,251,251)]">
+    <header class=" ">
+        <div class="lg:flex justify-center bg-[rgb(251,251,251)]">
+          <nav class="lg:w-11/12  bg-[rgb(251,251,251)]">
             <div class="navbar  bg-base-100 ">
                 <div class="navbar-start ">
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -85,15 +86,18 @@
                 </div>
 
                 <div class="navbar-end space-x-5">
-                    <div>
+                    <div class="hidden lg:block">
                         <i class="fa-solid border bg-white-100 p-1 rounded-3xl  text-blue-900 fa-magnifying-glass"></i></div>
                         
-                        <div>
-                            <i class="fa-solid border rounded-3xl  p-1 rounded-3xl  fa-cart-shopping"></i>
+                        <div class="hidden lg:block">
+                            <i class=" fa-solid border rounded-3xl  p-1 rounded-3xl  fa-cart-shopping"></i>
+                        </div>
+                        <div class="lg:hidden ">
+                          <i class="fa-solid fa-bars p-2 rounded-3xl border bg-white"></i>
                         </div>
 
                     
-                  <a class=" btn rounded-3xl bg-[rgb(171,239,95)] text-[rgb(28,28,28)] font-bold">Book Consult
+                  <a class=" hidden lg:block lg:p-2 btn rounded-3xl bg-[rgb(171,239,95)] text-[rgb(28,28,28)] font-bold  ">Book Consult
                     <i class="bg-[rgb(28,28,28)] text-white
                   -rotate-45 p-1 rounded-3xl  fa-solid fa-arrow-right "></i>
                   </a>
@@ -101,8 +105,12 @@
                 </div>
               </div>
         </nav>
+        </div>
+      
+
         <!-- banner part -->
-        <div class="lg:w-11/12 ">
+         <div class="lg:flex justify-center"> 
+<div class="lg:w-11/12 ">
           <figure>
             <img class="lg:mx-auto lg:text-center"
               src="assets/banner.png"
@@ -120,6 +128,8 @@
             </div>
           </div>
         </div>
+         </div>
+        
     </header>
     <main>
       <!-- second section -->
@@ -132,9 +142,11 @@
           </div>
           <div class="relative">
 
-          
-            <div class="hidden lg:block lg:absolute  lg:left-50 lg:top-50" ><img src="./assets/Vector.png" alt=""></div>
+          <div class="absolute">
+            <div class="hidden lg:block lg:relative   " ><img src="./assets/Vector.png" alt=""></div>
 </div>
+          </div>
+            
           <div class="lg:text-left lg:w-1/2 text-center">
             <button class="border p-2 mb-5 rounded-3xl text-sm bg-white ">
               <i class="
@@ -188,7 +200,8 @@ modern sophistication, featuring weathered wood, sleek metal accents.
       <!-- third section -->
       <div class=" ">       
         <!-- text container -->
-        <div class="m-10 text-center">       
+        <div class="lg:flex lg:justify-center"> 
+          <div class="m-10 text-center">       
           <button class="border  p-2 mb-5 rounded-3xl text-sm bg-white ">
            <i class="
                       fa-solid fa-arrow-right "></i>
@@ -198,8 +211,11 @@ modern sophistication, featuring weathered wood, sleek metal accents.
           <h1 class="text-3xl font-bold mb-5">Our Works Process</h1>
          <p class="text-sm"> The barn house captivates with its blend of rustic charm and  modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
         </div>
+        </div>
+        
         <!-- card container -->
-        <div class="lg:w-11/12 lg:gap-x-10 lg:grid lg:grid-cols-4 ">
+         <div class="lg:flex lg:justify-center">
+<div class="lg:w-11/12 lg:gap-x-10 lg:grid lg:grid-cols-4 ">
          <!-- first card -->
         <div class=" :w-11/12  card p-2  mb-5 bg-[rgb(231,193,211)]">
          <div class="flex justify-start pl-8">
@@ -264,15 +280,18 @@ modern sophistication, featuring weathered wood, sleek metal accents.
          </div>
        </div>
         </div>
+         </div>
+        
  
        </div>
       
       <!-- creative section one -->
-       <div class="mt-10 mb-10">
+       
+       <div class=" mt-10 mb-10">
         <!-- text container -->         
         <div class="text-center">
           <button class="border  p-2  rounded-3xl 
-          bg-[] text-sm bg-white ">
+          bg-[rgb(239,243,214)] text-sm ">
             <i class="
                        fa-solid fa-arrow-right "></i>
                     </a> 
@@ -284,10 +303,11 @@ modern sophistication, featuring weathered wood, sleek metal accents.
            <p class="mb-5 ">The barn house captivates with its blend of rustic charm and  modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
            
         </div>
-        <div class="lg:w-11/12  lg:grid-cols-12  ">
+        <div class="   ">
           <!-- first line -->
-         <div class="">
-          <div class="hero bg-white  lg:col-span-9 rounded-2xl   ">
+           <div class="lg:flex lg:justify-center space-x-5">
+<div class="lg:grid-cols-12 ">
+          <div class="hero bg-white  lg:col-span-9 grid rounded-2xl   ">
             <div class="hero-content border rounded-2xl flex-col  lg:flex-row">
               <img
                 src="./assets/img1.png"
@@ -311,6 +331,8 @@ modern sophistication, featuring weathered wood, sleek metal accents.
           </div>  
         
         </div>
+           </div>
+         
           
          
         </div>
@@ -351,8 +373,8 @@ modern sophistication, featuring weathered wood, sleek metal accents.
      <div>
       <!-- text container -->
       <div >
-        <h2 class="text-3xl text-center mb-4 font-bold">Successful Projects</h2>
-        <p class="text-sm font-bold mb-5 text-center">
+        <h2 class="mb-4 font-bold text-3xl text-center" >Successful Projects</h2>
+        <p class="text-md  mb-5 text-center">
           If you wants beautiful and awsome projects like 
           given below. Please Contact with us.
         </p>
@@ -401,11 +423,11 @@ modern sophistication, featuring weathered wood, sleek metal accents.
      </div>
     
        <!-- second last section -->
-      <div class="bg-[url('./assets/bg.png')]">
+      <div class="bg-custom-image">
         <!-- text container  -->
          <div class="text-center my-10 ">
           <button class="border  p-2 mb-3 rounded-3xl 
-          bg-[rgb(229,243,214)] text-sm bg-white ">
+          bg-[rgb(229,243,214)] text-sm  ">
             <i class="
                        fa-solid fa-arrow-right "></i>
                     </a> 
@@ -461,6 +483,7 @@ modern sophistication, featuring weathered wood, sleek metal accents.
   </div>
           </div>
       
+     
       
       
     </main>
